@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.gurtovenko</groupId>
+    <artifactId>tools-jwt</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <java.version>11</java.version>
+
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
+
+        <spring-version>5.3.5</spring-version>
+        <spring-security-version>5.4.5</spring-security-version>
+        <spring-log4j2-version>2.4.4</spring-log4j2-version>
+        <appache-lang-version>3.12.0</appache-lang-version>
+        <javax-servlet-version>4.0.1</javax-servlet-version>
+        <jaxb-api-version>2.3.1</jaxb-api-version>
+        <jjwt-version>0.9.1</jjwt-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring-security-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <version>${spring-log4j2-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${appache-lang-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax-servlet-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb-api-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jjwt-version}</version>
+        </dependency>
+    </dependencies>
+</project>
